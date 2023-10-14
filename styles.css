@@ -58,3 +58,29 @@ hr{
 .intro .hello{
     margin-top: 150px; /*places class named hello lower*/
 }
+
+.SectionB{
+    background-color: #FFDB59;
+}
+
+.Box{
+    margin-right: auto;
+    margin-left: 300px;
+    border-radius: 0px;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
