@@ -5,6 +5,7 @@ body{
 
 .Header{
     text-align: right; /*shifts to the right */
+    position: fixed;
     color: #FFDB59;
     font-size: 30px; /*changes font size to 30px*/
     word-spacing: 50px; /*adds spaces between the words*/
@@ -64,8 +65,7 @@ hr{
 }
 
 .Box{
-    margin-right: auto;
-    margin-left: 300px;
+    margin: 0 auto;
     border-radius: 0px;
     height: 250px;
     width: 250px;
@@ -83,4 +83,9 @@ footer{
     height: 50px;
     width: 100%;
     background-color: black;
+}
+
+.Header .buttons a{
+    text-decoration: none;
+    color: #FFDB59;
 }
