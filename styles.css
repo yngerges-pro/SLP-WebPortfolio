@@ -14,8 +14,6 @@ body{
     flex-direction: row; /*flex box that makes sure everything stays as a row despite change in screen size*/
 }
 
-
-
 .init{
     border-radius: 50%;
     background-color: #FFDB59;
@@ -27,9 +25,10 @@ body{
       
 }
 
-
 h1{
     text-align: center; /*centers the h1 texts*/
+    color: #FFDB59;
+    font-size: 50px;
 }
 
 .intro{
@@ -38,7 +37,6 @@ h1{
     justify-content: center; /*puts contents of the intro class in the center*/
     columns: auto 2;
     font-family: 'Times New Roman', Times, serif;
-    color: #FFDB59;
     font-size: 150%;
     
 }
@@ -52,7 +50,7 @@ h1{
     margin-left: 50px; /*places shape right 50px*/
 }
 
-hr{
+hr {
     margin-bottom: 100px; /*breaks down 100px after every line break*/
 }
 
@@ -60,8 +58,46 @@ hr{
     margin-top: 150px; /*places class named hello lower*/
 }
 
+.flex-container {
+    display: flex;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.contact-info {
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.socials button {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+.socials {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projects {
+    display: flex;
+}
+
 .SectionB{
     background-color: #FFDB59;
+    height: 400px;
+    padding: 15px;
 }
 
 .Box{
@@ -79,13 +115,8 @@ hr{
     font-size: 20px;
 }
 
-footer{
-    height: 50px;
-    width: 100%;
-    background-color: black;
-}
-
 .Header .buttons a{
     text-decoration: none;
     color: #FFDB59;
 }
+
