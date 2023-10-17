@@ -4,7 +4,7 @@ body{
 }
 
 .Header{
-    text-align: right; /*shifts to the right */
+    text-align: right; /*shifts to the right*/
     position: fixed;
     color: #FFDB59;
     font-size: 30px; /*changes font size to 30px*/
@@ -14,6 +14,7 @@ body{
     flex-direction: row; /*flex box that makes sure everything stays as a row despite change in screen size*/
 }
 
+
 .init{
     border-radius: 50%;
     background-color: #FFDB59;
@@ -21,7 +22,7 @@ body{
     width: 50px;
     margin-top: 5px; /*places shape lower by 5px */
     margin-right: auto; /*makes it so that it is positioned right for different sized screens*/
-    margin-left:5px; /*makes it to the far left*/
+    margin-left:15px; /*makes it to the far left*/
       
 }
 
@@ -38,7 +39,12 @@ h1{
     columns: auto 2;
     font-family: 'Times New Roman', Times, serif;
     font-size: 150%;
+    padding: 15%;
     
+}
+
+.parallax-image{
+    padding: 25%;
 }
 
 .circle{
@@ -51,7 +57,7 @@ h1{
 }
 
 hr {
-    margin-bottom: 100px; /*breaks down 100px after every line break*/
+    margin-bottom: 0px; /*breaks down 0px after every line break*/
 }
 
 .intro .hello{
@@ -120,3 +126,12 @@ hr {
     color: #FFDB59;
 }
 
+
+.space{
+    margin-bottom: 50px;
+}
+
+.info-projects {
+    padding: 200px;
+
+}
