@@ -126,6 +126,7 @@ hr {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 20px;
+    padding-bottom: 500px;
 }
 
 .Header .buttons a{
@@ -212,11 +213,10 @@ hr {
 .description button {
     margin-bottom: 10px;
     font-size: 20px;
+}
 
-.info-resume a
-{
-    color:#FFDB59;
-    margin-top: 200px;
+.space{
+    padding: 500px;
 }
 
 .blog a{
