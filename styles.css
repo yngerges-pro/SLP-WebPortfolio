@@ -27,7 +27,7 @@ body{
     background-color: #FFDB59;
     height: 50px;
     width: 50px;
-    margin-top: 5px; /*places shape lower by 5px */
+    margin-top: 25px; /*places shape lower by 5px */
     margin-right: auto; /*makes it so that it is positioned right for different sized screens*/
     margin-left: 15px; /*makes it to the far left*/
       
@@ -78,7 +78,7 @@ hr {
     width: 100%;
     left: 0;
     bottom: 0;
-    position: relative;
+    position: fixed;
 }
 
 .contact-info {
@@ -131,6 +131,7 @@ hr {
 .Header .buttons a{
     text-decoration: none;
     color: #FFDB59;
+    text-align: right;
 }
 
 .space{
@@ -178,6 +179,7 @@ hr {
     margin: auto;
 }
 
+
 .description-boxes1 { /*container of box1, button1, box2, and button2*/
     display: flex;
     flex-direction: row;
@@ -210,4 +212,15 @@ hr {
 .description button {
     margin-bottom: 10px;
     font-size: 20px;
+
+.info-resume a
+{
+    color:#FFDB59;
+    margin-top: 200px;
+}
+
+.blog a{
+    color:#FFDB59;
+    text-align: center;
+    padding: 100px;
 }
