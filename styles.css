@@ -4,31 +4,39 @@ body{
 }
 
 .Header{
-    text-align: right; /*shifts to the right */
+    position: fixed;
+    text-align: right; /*shifts to the right*/
     color: #FFDB59;
     font-size: 30px; /*changes font size to 30px*/
     word-spacing: 50px; /*adds spaces between the words*/
-    display:flex; /*flex box that makes sure everything stays as a row despite change in screen size*/
+    display: flex; /*flex box that makes sure everything stays as a row despite change in screen size*/
     align-items: baseline; /*makes all the elements (words and circle) line up*/
     flex-direction: row; /*flex box that makes sure everything stays as a row despite change in screen size*/
+    top: 10px;
+    z-index: 999;
+    width: 100%;
 }
 
-
+.buttons {
+    margin-right: 15px;
+    margin-left: auto;
+}
 
 .init{
     border-radius: 50%;
     background-color: #FFDB59;
     height: 50px;
     width: 50px;
-    margin-top: 5px; /*places shape lower by 5px */
+    margin-top: 25px; /*places shape lower by 5px */
     margin-right: auto; /*makes it so that it is positioned right for different sized screens*/
-    margin-left:5px; /*makes it to the far left*/
+    margin-left: 15px; /*makes it to the far left*/
       
 }
 
-
 h1{
     text-align: center; /*centers the h1 texts*/
+    color: #FFDB59;
+    font-size: 50px;
 }
 
 .intro{
@@ -37,9 +45,13 @@ h1{
     justify-content: center; /*puts contents of the intro class in the center*/
     columns: auto 2;
     font-family: 'Times New Roman', Times, serif;
-    color: #FFDB59;
     font-size: 150%;
+    padding: 15%;
     
+}
+
+.parallax-image{
+    padding: 25%;
 }
 
 .circle{
@@ -51,10 +63,164 @@ h1{
     margin-left: 50px; /*places shape right 50px*/
 }
 
-hr{
-    margin-bottom: 100px; /*breaks down 100px after every line break*/
+hr {
+    margin-bottom: 0px; /*breaks down 0px after every line break*/
 }
 
-.intro .hello{
+.intro .hello {
     margin-top: 150px; /*places class named hello lower*/
+}
+
+.flex-container {
+    display: flex;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.contact-info {
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.socials button {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+.socials {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projects {
+    display: flex;
+}
+
+.SectionB{
+    background-color: #FFDB59;
+    height: 400px;
+    padding: 15px;
+}
+
+.Box{
+    margin: 0 auto;
+    border-radius: 0px;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 500px;
+}
+
+.Header .buttons a{
+    text-decoration: none;
+    color: #FFDB59;
+    text-align: right;
+}
+
+.space{
+    margin-bottom: 50px;
+}
+
+.info-projects {
+    padding: 200px;
+}
+
+.images {
+    text-align: center;
+    background-color: white;
+    margin-top: 100px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    position: relative;
+}
+
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    position: absolute;
+    top: 300px;
+}
+
+.dot {
+    border-radius: 50%;
+    background-color: gray;
+    height: 25px;
+    width: 25px;
+}
+
+.description-all { /*container of all the boxes and buttons*/
+    position: relative;
+    height: 1000px;
+}
+
+.description { /*container of box and button*/
+    margin: auto;
+}
+
+
+.description-boxes1 { /*container of box1, button1, box2, and button2*/
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 40px;
+}
+
+.description-boxes2 { /*container of box3, button3, box4, and button4*/
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    bottom: 40px;
+}
+
+.description-box {
+    height: 350px;
+    width: 400px;
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 25px 25px 10px 10px;
+}
+
+.description button {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.space{
+    padding: 500px;
+}
+
+.blog a{
+    color:#FFDB59;
+    text-align: center;
+    padding: 100px;
 }
