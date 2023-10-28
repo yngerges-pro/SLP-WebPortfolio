@@ -156,20 +156,20 @@ hr {
 
 
 .dots {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 300px;
     position: absolute;
-    top: 300px;
+    top: 300px; */
 }
 
-.dot {
-    border-radius: 50%;
+/* .dot {
+    /* border-radius: 50%;
     background-color: gray;
     height: 25px;
-    width: 25px;
-}
+    width: 25px; */
+/* } */ 
 
 .description-all { /*container of all the boxes and buttons*/
     position: relative;
