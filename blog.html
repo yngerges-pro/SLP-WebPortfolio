@@ -1,19 +1,21 @@
-<!DOCTYPE html> 
- <html lang="en-US">
+<!DOCTYPE html>
+<html lang="en-US">
 
- 
-     <!--head element-->
-	<head>
-		<meta charset="UTF-8">
-		<!--title element -->
-		<title>Student Name- Profession</title>
-   		<link rel="stylesheet" type="text/css" href="styles.css"/>
-		<link href="reset.css" rel="stylesheet" type="text/css" /> 
-		<link href="reset-webview.css" rel="stylesheet" type="text/css" /> 
-	</head>
-	<body>
 
-		<div class="Header">
+<!--head element-->
+
+<head>
+	<meta charset="UTF-8">
+	<!--title element -->
+	<title>Student Name- Profession</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="Header">
 			<div class="init"></div>
 			<div class="buttons">
 				<a href="index.html">Home</a>
@@ -22,7 +24,7 @@
 				<a href="blog.html">Blog</a>
 			</div>
 		</div>
-
+	<!--
 		<div class="images">
 			<div class="images-text">
 				<h2>Images of Things that</h2>
@@ -36,7 +38,7 @@
 				<img src = "./assets/info5.jpg"/>
 
 
-				<!-- <div class="dot"></div>
+				<div class="dot"></div>
 				<div class="dot"></div>
 				<div class="dot"></div>
 				<div class="dot"></div>
@@ -44,56 +46,151 @@
 				<div class="dot"></div>
 				<div class="dot"></div>
 				<div class="dot"></div> -->
+
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 5</div>
+			<img src="./assets/info1.jpg" style="width:100%">
+			<div class="blogtext">First Pic</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 5</div>
+			<img src="./assets/info2.jpg" style="width:100%">
+			<div class="blogtext">Second Pic</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 5</div>
+			<img src="./assets/info3.jpg" style="width:100%">
+			<div class="blogtext">Third Pic</div>
+		</div>
+
+
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 5</div>
+			<img src="./assets/info4.jpg" style="width:100%">
+			<div class="blogtext">Fourth Pic</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 5</div>
+			<img src="./assets/info5.jpg" style="width:100%">
+			<div class="blogtext">Fifth Pic</div>
+		</div>
+
+	
+	</div>
+
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+	<a class="next" onclick="moveSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+	</div>
+
+
+	<script>
+		let slideIndex = 1; //global variable
+		showSlides(slideIndex);
+		let dots = document.getElementsByClassName("dot");
+		// Next/previous controls
+		function moveSlides(n) {
+			showSlides(slideIndex += n); //increments slides
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n); //gives you current slide
+		}
+
+		function showSlides(n) {
+			let slides = document.getElementsByClassName("mySlides"); //getting images from blog.html
+			let dots = document.getElementsByClassName("dot"); //getting element dot from blog.html
+			if (n > slides.length) { slideIndex = 1 } //resets index to 1 slides
+			if (n < 1) { slideIndex = slides.length } //if gone back in the first image, will return last image
+
+
+
+			//for loops hide images and dots by default
+			for (let i = 0; i < slides.length; i++) 
+				{ slides[i].style.display = "none"; } //hides images as we increment 
+
+			for (let i = 0; i < dots.length; i++) 
+				{ dots[i].className = dots[i].className.replace(" active", ""); } //active is for shapes
+
+			slides[slideIndex - 1].style.display = "block"; //displays image
+			//slideIndex initializes with 1 while array starts with 0.
+
+			dots[slideIndex - 1].className += " active"; //displays dots
+		} 
+	</script>
+
+	<div class="description-all">
+		<div class="description-boxes1">
+			<div class="description">
+				<button>Description 1</button>
+				<div class="description-box">
+					<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity
+					</p>
+				</div>
+			</div>
+			<div class="description">
+				<button>Description 2</button>
+				<div class="description-box">
+					<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="description-boxes2">
+			<div class="description">
+				<button>Description 3</button>
+				<div class="description-box">
+					<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity
+					</p>
+				</div>
+			</div>
+			<div class="description">
+				<button>Description 4</button>
+				<div class="description-box">
+					<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="space"></div>
+	
+
+	<!--footer element-->
+	<footer>
+		<div class="flex-container">
+			<div class="contact-info">
+				<p><a href="tel:123456789">123-456-789</a></p>
+				<p><a href="mailto:example@email.com">example@gmail.com</a></p>
+			</div>
+			<div class="socials">
+				<a href="https://www.linkedin.com/" target="_blank"><button></button></a>
+				<a href="https://www.instagram.com/" target="_blank"><button></button></a>
+				<a href="https://www.github.com/" target="_blank"><button></button></a>
 			</div>
 		</div>
 
-		<div class="description-all">
-			<div class="description-boxes1">
-				<div class="description">
-					<button>Description 1</button>
-					<div class="description-box">
-						<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity</p>
-					</div>
-				</div>
-				<div class="description">
-					<button>Description 2</button>
-					<div class="description-box">
-						<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity</p>
-					</div>
-				</div>
-			</div>
-			<div class="description-boxes2">
-				<div class="description">
-					<button>Description 3</button>
-					<div class="description-box">
-						<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity</p>
-					</div>
-				</div>
-				<div class="description">
-					<button>Description 4</button>
-					<div class="description-box">
-						<p>Brief description on how this job/internship makes you a strong candidate for a new opportunity</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="space"></div>
-		<!--footer element-->
-		<footer>
-			<div class="flex-container">
-				<div class="contact-info">
-					<p><a href="tel:123456789">123-456-789</a></p>
-					<p><a href = "mailto:example@email.com">example@gmail.com</a></p>
-				</div>
-				<div class="socials">
-					<a href="https://www.linkedin.com/"target="_blank"><button></button></a>
-					<a href="https://www.instagram.com/"target="_blank"><button></button></a>
-					<a href="https://www.github.com/"target="_blank"><button></button></a>
-				</div>
-			</div>
-			
-		</footer>
+	</footer>
 
-	</body>
+</body>
 
- </html>
+</html>
