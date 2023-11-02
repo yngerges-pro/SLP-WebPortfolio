@@ -21,7 +21,7 @@ function showSlides() {
         { slides[i].style.display = "none"; } //hides images as we increment 
     
     slideIndex++;
-    if (n > slides.length) { slideIndex = 1 } //resets index to 1 slides
+    if (slideIndex > slides.length) { slideIndex = 1 } //resets index to 1 slides
     
     for (let i = 0; i < dots.length; i++) 
         { dots[i].className = dots[i].className.replace(" active", ""); } //active is for shapes
