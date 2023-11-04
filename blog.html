@@ -24,28 +24,6 @@
 				<a href="blog.html">Blog</a>
 			</div>
 		</div>
-	<!--
-		<div class="images">
-			<div class="images-text">
-				<h2>Images of Things that</h2>
-				<h2>Represent You!</h2>
-			</div>
-			<div class="dots">
-				<img src ="./assets/info1.jpg"/>
-				<img src ="./assets/info2.jpg"/>
-				<img src = "./assets/info3.jpg"/>
-				<img src = "./assets/info4.jpg"/>
-				<img src = "./assets/info5.jpg"/>
-
-
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div> -->
 
 	<!-- Slideshow container -->
 	<div class="slideshow-container">
@@ -94,50 +72,16 @@
 
 	<!-- The dots/circles -->
 	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1)"></span>
-		<span class="dot" onclick="currentSlide(2)"></span>
-		<span class="dot" onclick="currentSlide(3)"></span>
-		<span class="dot" onclick="currentSlide(4)"></span>
-		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
 	</div>
 
-
-	<script>
-		let slideIndex = 1; //global variable
-		showSlides(slideIndex);
-		let dots = document.getElementsByClassName("dot");
-		// Next/previous controls
-		function moveSlides(n) {
-			showSlides(slideIndex += n); //increments slides
-		}
-
-		// Thumbnail image controls
-		function currentSlide(n) {
-			showSlides(slideIndex = n); //gives you current slide
-		}
-
-		function showSlides(n) {
-			let slides = document.getElementsByClassName("mySlides"); //getting images from blog.html
-			let dots = document.getElementsByClassName("dot"); //getting element dot from blog.html
-			if (n > slides.length) { slideIndex = 1 } //resets index to 1 slides
-			if (n < 1) { slideIndex = slides.length } //if gone back in the first image, will return last image
-
-
-
-			//for loops hide images and dots by default
-			for (let i = 0; i < slides.length; i++) 
-				{ slides[i].style.display = "none"; } //hides images as we increment 
-
-			for (let i = 0; i < dots.length; i++) 
-				{ dots[i].className = dots[i].className.replace(" active", ""); } //active is for shapes
-
-			slides[slideIndex - 1].style.display = "block"; //displays image
-			//slideIndex initializes with 1 while array starts with 0.
-
-			dots[slideIndex - 1].className += " active"; //displays dots
-		} 
-	</script>
-
+	<!-- JS linkage -->
+	<script src="script.js" defer></script>
+	
 	<div class="description-all">
 		<div class="description-boxes1">
 			<div class="description">
@@ -174,7 +118,6 @@
 	</div>
 	<div class="space"></div>
 	
-
 	<!--footer element-->
 	<footer>
 		<div class="flex-container">
