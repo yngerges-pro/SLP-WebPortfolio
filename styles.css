@@ -336,3 +336,26 @@ hr {
     height: 90%;
 }
 
+.parallax
+{
+    background-image: url("./assets/info1.jpg");
+    height: 550px; /* Set the height */
+
+    /* Create a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxTwo
+{
+    background-image: url("./assets/info2.jpg");
+    height: 550px; /* Set the height */
+
+    /* Create a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
