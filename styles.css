@@ -51,7 +51,12 @@ h1{
 }
 
 .parallax-image{
-    padding: 25%;
+    padding: 0.5%;
+}
+
+.GIF {
+    width: 100%;
+    height: inherit;
 }
 
 .circle{
@@ -111,15 +116,26 @@ hr {
 .SectionB{
     background-color: #FFDB59;
     height: 400px;
-    padding: 15px;
+    padding: 25px;
 }
 
+/* .Wave{
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    /* margin: center; */
+/* }  */
+
 .Box{
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-top: 0px;
+    margin-left: 40%;
+    margin-right: auto;
     border-radius: 0px;
     height: 250px;
     width: 250px;
-    background-color: black;
+    /* background-color: black; */
 
 }
 
@@ -157,20 +173,20 @@ hr {
 
 
 .dots {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 300px;
     position: absolute;
-    top: 300px;
+    top: 300px; */
 }
 
-.dot {
-    border-radius: 50%;
+/* .dot {
+    /* border-radius: 50%;
     background-color: gray;
     height: 25px;
-    width: 25px;
-}
+    width: 25px; */
+/* } */ 
 
 .description-all { /*container of all the boxes and buttons*/
     position: relative;
@@ -226,6 +242,7 @@ hr {
     padding: 100px;
 }
 
+
 .whiteBox{
     width: 200px; 
     height: 200px; 
@@ -246,4 +263,122 @@ hr {
 
 .content{
     flex: 1;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.blogtext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.resume{
+    margin: 25%;
+    width: 75%;
+    height: 90%;
+}
+
+.parallax
+{
+    background-image: url("./assets/info1.jpg");
+    height: 550px; /* Set the height */
+
+    /* Create a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxTwo
+{
+    background-image: url("./assets/info2.jpg");
+    height: 550px; /* Set the height */
+
+    /* Create a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
