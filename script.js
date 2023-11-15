@@ -2,10 +2,7 @@
 let slideIndex = 0; //global variable
 showSlides();
 let dots = document.getElementsByClassName("dot");
-// Next/previous controls
-function moveSlides(n) {
-    showSlides(slideIndex += n); //increments slides
-}
+
 
 // Thumbnail image controls
 function currentSlide(n) {
@@ -31,5 +28,5 @@ function showSlides() {
 
     dots[slideIndex - 1].className += " active"; //displays dots
 
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
 } 
