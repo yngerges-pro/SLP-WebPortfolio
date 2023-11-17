@@ -104,6 +104,8 @@ hr {
     height: 50px;
     width: 50px;
     background-color: blue;
+    border: none; 
+    padding: 0;
 }
 
 .socials {
