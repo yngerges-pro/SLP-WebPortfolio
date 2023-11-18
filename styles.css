@@ -70,10 +70,15 @@ h1{
 }
 
 .propic{
+    border-radius: 0%;
     position: relative;
-    border-radius: 25%;
-    height: 400px;
-    width:580px;
+    margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: auto;
+    padding-right: 35%;
+    padding-left:10%;
+    height: 300px;
+    width:850px;
 }
 
 hr {
